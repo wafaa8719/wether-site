@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <h2>Check the Weather 🌍</h2>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter city name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+    {% if weather_data %}
+    <div class="weather">
+        <h3>Weather in {{ weather_data['metric']['name'] }}</h3>
+        <p>🌡️ Temperature: {{ weather_data['metric']['main']['temp'] }} °C</p>
+        <p>🌡️ Temperature: {{ weather_data['imperial']['main']['temp'] }} °F</p>
+        <p>💨 Wind Speed: {{ weather_data['metric']['wind']['speed'] }} m/s</p>
+        <p>☁️ Condition: {{ weather_data['metric']['weather'][0]['description'] }}
+     </p>  
+        <p>
+            🔗 For more details, visit 
+            <a href="{{ city_details_url }}" target="_blank" rel="noopener noreferrer">
+                OpenWeatherMap - {{ weather_data['metric']['name'] }}
+            </a>
+        </p>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}
