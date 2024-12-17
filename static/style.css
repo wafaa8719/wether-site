@@ -3,11 +3,11 @@ h1, h2, h3 {
     text-align: center;
 }
 .error {
-    color: red;
+    color: rgb(225, 12, 12);
     font-weight: bold;
 }
 .weather {
-    background: linear-gradient(135deg, #2e3f96, #80deea);
+    background: linear-gradient(135deg, #5599e7, #80deea);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -54,7 +54,7 @@ footer {
 }
 
 footer a {
-    color: #007bff;
+    color: #1574d9;
     text-decoration: none;
 }
 
