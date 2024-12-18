@@ -48,5 +48,5 @@ For more information about the tools and resources I use:
 
 ---
 
- *Thank you for visiting! Feel free to explore and reach out!* **[Wether](https://github.com/wafaa8719/wether-site.gitp)**:material-weather-hail:
+ *Thank you for visiting! Feel free to explore and reach out!* **[Wether](https://github.com/wafaa8719/wether-site.gitp)**
 
